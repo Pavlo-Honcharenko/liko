@@ -28066,6 +28066,9 @@ padding-bottom: 90px;
 	width: 100%;
 	height: 100%;
 }
+.talk-title {
+	margin-bottom: 30px;
+}
 .talk-title > div > div {
 	color: #fff !important;
 }
