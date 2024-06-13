@@ -109,6 +109,7 @@
     }
     &-shape{
         margin-right: 160px;
+		  max-width: 200px;
         @media #{$md}{
             margin-right: 0;
         }
@@ -117,7 +118,7 @@
             margin-bottom: 20px;
         }
         & img{
-            animation: rotate2 5s linear infinite;
+            animation: rotate2 6s linear infinite;
         }
     }
 }
