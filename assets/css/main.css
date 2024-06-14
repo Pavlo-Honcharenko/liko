@@ -27878,6 +27878,9 @@ tbody, td, tfoot, th, thead, tr {
 .tp-creative-solutions-3-area .creative-solutions__subtitle.tp_text_invert > div {
 	background-image: linear-gradient(to right, rgb(255 255 255) 50%, rgb(163 163 163 / 50%) 50%);
 }
+.page-index-3 .tp-hero-3-category {
+	color: #545454;
+}
 
 @media (max-width: 1400px) {
 	.text-container {
@@ -27924,7 +27927,7 @@ tbody, td, tfoot, th, thead, tr {
         margin-bottom: 70px;
     }
     .tp-copyright-2-social.text-footer.text-center {
-    	padding: 10px;
+    	padding: 12px;
     }
     .page-index-3 .tp-cta-title {
     	font-size: 80px !important;
@@ -27969,6 +27972,9 @@ padding-bottom: 90px;
 	font-size: 16px;
 	color: #fff !important;
 	text-transform: initial;
+}
+.text-footer a:hover {
+	color: #000 !important;
 }
 .text-footer p {
 	margin-bottom: 6px;
