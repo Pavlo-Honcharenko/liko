@@ -27976,6 +27976,9 @@ padding-bottom: 90px;
 .text-footer a:hover {
 	color: #000 !important;
 }
+.text-footer.contacts-footer a:hover {
+	color: #fff !important;
+}
 .text-footer p {
 	margin-bottom: 6px;
 }
