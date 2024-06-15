@@ -114,32 +114,28 @@
 /*  1.1 Theme Default
 /*----------------------------------------*/
 
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Marcellus&family=Syne:wght@400;500;600;700;800&family=Aladin&display=swap");
 @font-face {
   font-family: "Futura Book";
   src: url("../fonts/Futura Book.ttf") format("truetype");
-  /* font-weight: normal;
-  font-style: normal; */
 }
 @font-face {
   font-family: "Futura Std Book";
   src: url("../fonts/Futura Std Book.ttf") format("truetype");
-  /* font-weight: normal;
-  font-style: normal; */
 }
+
 @font-face {
-  font-family: "Futura Std Thin";
-  src: url("../fonts/Futura Std Thin.ttf") format("truetype");
-  /* font-weight: normal;
-  font-style: normal; */
+  font-family: "Futura Thin";
+  src: url("../fonts/FUTURTHN.ttf") format("truetype");
 }
 @font-face {
   font-family: "Futura Bold";
   src: url("../fonts/Futura Bold.ttf") format("truetype");
-  /* font-weight: normal;
-  font-style: normal; */
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Marcellus&family=Syne:wght@400;500;600;700;800&family=Aladin&display=swap");
+
+
 .tp-product-tab-2 .nav-tabs .nav-link .tp-product-tab-tooltip, .tp-tab-line, .tp-offcanvas-area, .tp-offcanvas-social ul li a, .tp-offcanvas-2-left, .tp-offcanvas-2-right, .tp-offcanvas-2-close, .tp-offcanvas-2-close-btn .text, .tp-offcanvas-2-close-btn .text span, .tpoffcanvas__logo, .tpoffcanvas__right-info, .tpoffcanvas__social-link ul li a::before, .tp-swiper-dot .swiper-pagination-bullet, .tp-swiper-dot-border .swiper-pagination-bullet, .tp-swiper-scrollbar, .back-to-top-wrapper, a,
 button,
 p,
@@ -11772,8 +11768,11 @@ body.tp-magic-cursor #magic-cursor {
   line-height: 1;
   letter-spacing: -5.6px;
   color: var(--tp-common-black);
-  font-family: "Futura Std";
+  font-family: var(--tp-ff-marcellus);
   margin-bottom: 35px;
+}
+.tp-hero-3-title span {
+	display: block;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-hero-3-title {
@@ -11798,7 +11797,9 @@ body.tp-magic-cursor #magic-cursor {
   text-transform: uppercase;
   color: var(--tp-common-black);
   font-family: var(--tp-ff-marcellus);
-  margin-bottom: 20px;
+}
+.tp-hero-3-category .tp-reveal-line {
+	margin-bottom: 0;
 }
 .tp-hero-3-circle-shape {
   position: absolute;
@@ -12760,7 +12761,7 @@ body.tp-magic-cursor #magic-cursor {
   font-weight: 400;
   line-height: 1;
   color: var(--tp-common-black);
-  font-family: var(--tp-ff-marcellus);
+  font-family: "Futura Book";
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-service-3-title {
@@ -12808,6 +12809,7 @@ body.tp-magic-cursor #magic-cursor {
   font-weight: 400;
   line-height: 26px;
   margin-bottom: 30px;
+  font-family: "Futura Book";
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), (max-width: 767px) {
   .tp-service-3-content p br {
@@ -18986,7 +18988,7 @@ body.tp-magic-cursor #magic-cursor {
 }
 
 .tp-about-3-content {
-  padding-right: 230px;
+	padding-top: 30px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .tp-about-3-content {
@@ -27831,6 +27833,7 @@ tbody, td, tfoot, th, thead, tr {
 	position: relative;
 }
 .creative-solutions__title {
+	font-family: "Futura Book";
 	font-weight: 600;
 	font-size: 50px;
 	color: #B3A998;
@@ -27877,9 +27880,6 @@ tbody, td, tfoot, th, thead, tr {
 }
 .tp-creative-solutions-3-area .creative-solutions__subtitle.tp_text_invert > div {
 	background-image: linear-gradient(to right, rgb(255 255 255) 50%, rgb(163 163 163 / 50%) 50%);
-}
-.page-index-3 .tp-hero-3-category {
-	color: #545454;
 }
 
 @media (max-width: 1400px) {
@@ -27941,7 +27941,7 @@ tbody, td, tfoot, th, thead, tr {
     	padding-top: 90px;
     	} 
     .page-index-3 .pb-120 {
-padding-bottom: 90px;
+		padding-bottom: 90px;
     }
     .page-index-3 .about-title {
     	margin-bottom: 20px;
@@ -27969,6 +27969,7 @@ padding-bottom: 90px;
 	height: 100%;
 }
 .text-footer, .text-footer a, .text-footer p {
+	font-family: "Futura Book";
 	font-size: 16px;
 	color: #fff !important;
 	text-transform: initial;
@@ -27995,8 +27996,8 @@ padding-bottom: 90px;
 .ff-futura-book {
 	font-family: "Futura Book";
 }
-.ff-futura-std-thin, .ff-futura-std-thin p, .ff-futura-std-thin a {
-	 font-family: "Futura Std Thin";
+.ff-futura-thin, .ff-futura-thin p, .ff-futura-thin a {
+	 font-family: "Futura Thin";
 	 font-weight: 300;
 }
 .ff-futura-bold {
@@ -28017,6 +28018,9 @@ padding-bottom: 90px;
     background-image: linear-gradient(to right, #B3A998 50%, rgba(0, 0, 0, 0.5) 50%);
 }
 .page-index-3 .about-title {
+	font-family: "Futura Book";
+	font-weight: 600;
+	letter-spacing: 0px;
 	font-size: 40px;
 	line-height: 1.2;
 }
@@ -28034,7 +28038,12 @@ padding-bottom: 90px;
 	padding: 0 !important;
 }
 .portfolio-title {
+	font-family: "Futura Book";
 	font-size: 70px;
+}
+.tp-section-title-200.portfolio-title {
+	letter-spacing: -2px;
+	font-weight: 600;
 }
 .portfolio-title span {
 	padding: 0; 
@@ -28050,7 +28059,10 @@ padding-bottom: 90px;
     }
 }
 .page-index-3 .tp-project-3-title-sm {
+	font-family: "Futura Book";
+	font-weight: 600;
     font-size: 50px;
+    letter-spacing: 0;
 }
 .page-index-3 .tp-btn-project-sm {
 	background: #B3A998;
@@ -28076,6 +28088,9 @@ padding-bottom: 90px;
 	height: 100%;
 }
 .talk-title {
+	font-family: "Futura Book";
+	font-weight: 600;
+	letter-spacing: 0;
 	margin-bottom: 30px;
 }
 .talk-title > div > div {
@@ -28104,6 +28119,30 @@ padding-bottom: 90px;
 	    margin-bottom: 10px;
 	}
 }
+.tp-hero-3-content-box .tp-btn-black-2 {
+	margin-top: 50px;
+}
+.tp-about-3-title-box .tp-section-title-90 {
+	font-family: "Futura Book";
+	font-weight: 600;
+    letter-spacing: 0px;
+}
+@media (min-width: 991px) {
+	.tp-project-3-wrap > .row {
+		padding: 0 20px;
+	}
+}
+.tp-header-3-area .tp-inner-header-menu > nav > ul > li > a {
+	color: #000;
+}
+.tp-header-3-area > .container  {
+	background: rgba(255, 255, 255, 0.9);
+}
+.tp-header-3-area {
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.9);
+}
+
 
 
 
