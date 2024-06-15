@@ -764,13 +764,13 @@
 			separatorColor: '#fafafa',
 			bulletColor: '#fafafa',
 			onMoveStart: function (e) {
-				
+
 			},
 			onMoving: function () {
-				
+
 			},
 			onMoveEnd: function () {
-				
+
 			},
 		});
 	}
@@ -1756,14 +1756,14 @@
 	});
 
 
-	
-	if($('#smooth-wrapper').length && $('#smooth-content').length){
+
+	if ($('#smooth-wrapper').length && $('#smooth-content').length) {
 		gsap.registerPlugin(ScrollTrigger, ScrollSmoother, TweenMax, ScrollToPlugin);
-	
+
 		gsap.config({
 			nullTargetWarn: false,
 		});
-	
+
 		let smoother = ScrollSmoother.create({
 			smooth: 2,
 			effects: true,
@@ -1958,7 +1958,7 @@
 			tp_hero_2.to(".tp-video-wrap", {
 				width: "1110px",
 				height: "560px",
-	
+
 			});
 		});
 	}
@@ -1979,7 +1979,7 @@
 					pinSpacing: false,
 					end: "bottom 100%",
 					duration: 3,
-					
+
 				}
 			});
 			tp_instagram_3.to(".tp-instagram-thumb img", {
@@ -1987,7 +1987,7 @@
 				height: "580px",
 				borderRadius: "10px",
 			});
-	
+
 		});
 	}
 
@@ -2368,19 +2368,19 @@
 
 		let pw = gsap.matchMedia();
 		pw.add("(min-width: 1200px)", () => {
-	
+
 			gsap.set('.tp-project-3-wrap .pro-img-1 img', {
 				x: '500',
 			})
 			gsap.set('.tp-project-3-wrap .pro-img-2 img', {
 				x: '-500',
 			})
-	
+
 			let projects = gsap.utils.toArray(".tp-project-3-wrap");
-	
+
 			projects.forEach((item) => {
 				var $this = $(item);
-	
+
 				gsap.to($this.find('.pro-img-1 img'), {
 					x: '0',
 					scrollTrigger: {
@@ -2392,7 +2392,7 @@
 						transformOrigin: "50% 50%"
 					},
 				})
-	
+
 				gsap.to($this.find('.pro-img-2 img'), {
 					x: '0',
 					scrollTrigger: {
@@ -2405,7 +2405,7 @@
 					},
 				})
 			});
-	
+
 		});
 	}
 
@@ -2559,7 +2559,7 @@
 				once: true
 			}
 		});
-	
+
 		let mySplitText = new SplitText(".footer-big-text", { type: "words,chars" });
 		let chars = mySplitText.chars;
 		let endGradient = chroma.scale(['#FFF', '#FFF', '#FFF', '#FFF', '#FFF']);
@@ -2626,7 +2626,7 @@
 				once: true
 			}
 		});
-	
+
 		let mySplitText = new SplitText(".cta-text", { type: "words,chars" });
 		let chars = mySplitText.chars;
 		let endGradient = chroma.scale(['#FFB55E', '#F25164', '#7F00D7', '#EC38BC', '#F25164']);
@@ -3585,14 +3585,14 @@
 
 
 	// settings append in body
-function tp_settings_append($x){
-    var settings = $('body');
-    let dark;
-	let isDark = is_dark_mode_active()? 'active' : '';
-	let isLight = !is_dark_mode_active()? 'active' : '';
-	let isChecked = is_dark_mode_active()? 'checked="true"' : '';
-    $x == true ? dark = 'd-block' : dark = 'd-none';
-    var settings_html = `<div class="tp-theme-settings-area transition-3">
+	function tp_settings_append($x) {
+		var settings = $('body');
+		let dark;
+		let isDark = is_dark_mode_active() ? 'active' : '';
+		let isLight = !is_dark_mode_active() ? 'active' : '';
+		let isChecked = is_dark_mode_active() ? 'checked="true"' : '';
+		$x == true ? dark = 'd-block' : dark = 'd-none';
+		var settings_html = `<div class="tp-theme-settings-area transition-3">
     <div class="tp-theme-wrapper">
        <div class="tp-theme-header text-center">
           <h4 class="tp-theme-header-title">Liko Mode Settings</h4>
@@ -3626,85 +3626,83 @@ function tp_settings_append($x){
     </div>
  </div>`;
 
- settings.append(settings_html);
-}
-tp_settings_append(false); // if want to enable dark light mode then send "true";
-
-// settings open btn
-$(".tp-theme-settings-open-btn").on("click", function () {
-    $(".tp-theme-settings-area").toggleClass("settings-opened");
-});
-
-function is_dark_mode_active(){
-	if($('html').hasClass('liko-dark-active')){
-		return true;
+		settings.append(settings_html);
 	}
-	return false;
-}
+	tp_settings_append(false); // if want to enable dark light mode then send "true";
 
-$(document).on('click', '#tp-dir-toggler', function(){
-	if($('html').hasClass('liko-dark-active')){
-        $('html').removeClass('liko-dark-active')
-    }else{
-        $('html').addClass('liko-dark-active')
-    }
-})
-
-
-
-if ($('.subscribe-popup').length) {
-	const loginPopup = document.querySelector(".subscribe-popup");
-	const close = document.querySelector(".close");
-	
-	window.addEventListener("load",function(){
-	
-	 showPopup();
-	
-	})
-	
-	function showPopup(){
-		  const timeLimit = 5
-		  let i=0;
-		  const timer = setInterval(function(){
-		   i++;
-		   if(i == timeLimit){
-			clearInterval(timer);
-			loginPopup.classList.add("show");
-		   } 
-		   console.log(i)
-		  },500);
-	}
-	
-	
-	close.addEventListener("click",function(){
-	  loginPopup.classList.remove("show");
-	})
-}
-
-// zoom in
-$(".anim-zoomin").each(function() {
-
-	// Add wrap <div>.
-	$(this).wrap('<div class="anim-zoomin-wrap"></div>');
-
-	// Add overflow hidden.
-	$(".anim-zoomin-wrap").css({ "overflow": "hidden" })
-
-	var $this = $(this);
-	var $asiWrap = $this.parents(".anim-zoomin-wrap");
-
-	let tp_ZoomIn = gsap.timeline({
-		scrollTrigger: {
-			trigger: $asiWrap,
-			start: "top 90%",
-			markers: false,
-		}
+	// settings open btn
+	$(".tp-theme-settings-open-btn").on("click", function () {
+		$(".tp-theme-settings-area").toggleClass("settings-opened");
 	});
-	tp_ZoomIn.from($this, { duration: 1.5, autoAlpha: 0, scale: 1.4, ease: Power2.easeOut, clearProps:"all" });
 
-});
+	function is_dark_mode_active() {
+		if ($('html').hasClass('liko-dark-active')) {
+			return true;
+		}
+		return false;
+	}
+
+	$(document).on('click', '#tp-dir-toggler', function () {
+		if ($('html').hasClass('liko-dark-active')) {
+			$('html').removeClass('liko-dark-active')
+		} else {
+			$('html').addClass('liko-dark-active')
+		}
+	})
 
 
+
+	if ($('.subscribe-popup').length) {
+		const loginPopup = document.querySelector(".subscribe-popup");
+		const close = document.querySelector(".close");
+
+		window.addEventListener("load", function () {
+
+			showPopup();
+
+		})
+
+		function showPopup() {
+			const timeLimit = 5
+			let i = 0;
+			const timer = setInterval(function () {
+				i++;
+				if (i == timeLimit) {
+					clearInterval(timer);
+					loginPopup.classList.add("show");
+				}
+				console.log(i)
+			}, 500);
+		}
+
+
+		close.addEventListener("click", function () {
+			loginPopup.classList.remove("show");
+		})
+	}
+
+	// zoom in
+	$(".anim-zoomin").each(function () {
+
+		// Add wrap <div>.
+		$(this).wrap('<div class="anim-zoomin-wrap"></div>');
+
+		// Add overflow hidden.
+		$(".anim-zoomin-wrap").css({ "overflow": "hidden" })
+
+		var $this = $(this);
+		var $asiWrap = $this.parents(".anim-zoomin-wrap");
+
+		let tp_ZoomIn = gsap.timeline({
+			scrollTrigger: {
+				trigger: $asiWrap,
+				start: "top 90%",
+				markers: false,
+			}
+		});
+		tp_ZoomIn.from($this, { duration: 1.5, autoAlpha: 0, scale: 1.4, ease: Power2.easeOut, clearProps: "all" });
+
+	});
 
 
 })(jQuery);
