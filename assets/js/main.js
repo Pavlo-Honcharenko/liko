@@ -194,7 +194,7 @@
 				event.preventDefault();
 				$('html, body').stop().animate({
 					scrollTop: target.offset().top - 120
-				}, 1500);
+				}, 1000);
 			}
 		});
 	}
@@ -2414,11 +2414,11 @@
 		let menuBox = $('.tp-header-3-menu-box')
 		let menuBoxWidth = menuBox.width()
 		let menuBoxHeight = menuBox.height()
-		$('.menu-bg').css({
-			'width': menuBoxWidth + 46,
-			'height': menuBoxHeight,
-			'left': menuBox.offset().left
-		})
+		// $('.menu-bg').css({
+		// 	'width': menuBoxWidth + 46,
+		// 	'height': menuBoxHeight,
+		// 	'left': menuBox.offset().left
+		// })
 	}
 
 
