@@ -11994,7 +11994,7 @@ body.tp-magic-cursor #magic-cursor {
   font-size: 99px;
   font-weight: 400;
   line-height: 1;
-  letter-spacing: -5.6px;
+  letter-spacing: -5px;
   color: var(--tp-common-black);
   font-family: var(--tp-ff-marcellus);
   margin-bottom: 35px;
@@ -12014,10 +12014,11 @@ body.tp-magic-cursor #magic-cursor {
 }
 @media (max-width: 767px) {
   .tp-hero-3-title {
-    font-size: 55px;
+    font-size: 52px;
+    letter-spacing: -1.6px;
   }
 }
-@media (max-width: 385px) {
+@media (max-width: 400px) {
   .tp-hero-3-title {
     font-size: 45px;
   }
@@ -28391,13 +28392,13 @@ tbody, td, tfoot, th, thead, tr {
 
 #header-sticky #burger-btn {
   display: block;
-  margin: -40px 0 0 auto;
+  margin: -50px 0 0 auto;
 }
 #header-sticky.header-sticky .tp-header-logo {
   margin-top: 10px;
 }
 
-@media (max-width: 395px) {
+@media (max-width: 400px) {
   .tp-hero-3-title .tp-reveal-line {
     padding-bottom: 8px;
   }
